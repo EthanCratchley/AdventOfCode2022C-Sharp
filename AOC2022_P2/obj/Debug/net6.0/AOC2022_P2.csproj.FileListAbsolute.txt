@@ -1,0 +1,14 @@
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\bin\Debug\net6.0\AOC2022_P2.exe
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\bin\Debug\net6.0\AOC2022_P2.deps.json
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\bin\Debug\net6.0\AOC2022_P2.runtimeconfig.json
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\bin\Debug\net6.0\AOC2022_P2.dll
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\bin\Debug\net6.0\AOC2022_P2.pdb
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\AOC2022_P2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\AOC2022_P2.AssemblyInfoInputs.cache
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\AOC2022_P2.AssemblyInfo.cs
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\AOC2022_P2.csproj.CoreCompileInputs.cache
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\AOC2022_P2.dll
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\refint\AOC2022_P2.dll
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\AOC2022_P2.pdb
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\AOC2022_P2.genruntimeconfig.cache
+C:\Users\buzz5\OneDrive\Desktop\AOC2022\AOC2022_P2\obj\Debug\net6.0\ref\AOC2022_P2.dll
