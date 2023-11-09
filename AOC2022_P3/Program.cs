@@ -6,17 +6,17 @@ namespace AOC2022_P3
 {
     public class Program
     {
-        // Splits a word into two halves and returns them as a tuple
-        public static (string, string) SplitWordInHalf(string word)
+        // Splits a word into two halves and returns them as a tuple : Part 1
+        /*public static (string, string) SplitWordInHalf(string word)
         {
             int middle = word.Length / 2;
             string firstHalf = word.Substring(0, middle);
             string secondHalf = word.Substring(middle);
             return (firstHalf, secondHalf);
-        }
+        }*/
 
         // Finds and returns matching letters between two strings
-        public static string FindMatchingLetters(string firstHalf, string secondHalf)
+        /*public static string FindMatchingLetters(string firstHalf, string secondHalf) : Part 1
         {
             string matchingLetters = "";
 
@@ -30,10 +30,10 @@ namespace AOC2022_P3
                 }
             }
             return matchingLetters;
-        }
+        }*/
 
         // Calculates the total value of matching letters between two halves
-        public static int CalculateTotalValueOfMatches(string firstHalf, string secondHalf)
+        /*public static int CalculateTotalValueOfMatches(string firstHalf, string secondHalf) : Part 1
         {
             int sum = 0;
             HashSet<char> matches = new HashSet<char>();
@@ -50,7 +50,7 @@ namespace AOC2022_P3
                 }
             }
             return sum;
-        }
+        }*/
 
         // Assigns a value to a letter based on its position in the alphabet and case
         public static int GetValueOfLetter(char letter)
@@ -68,6 +68,15 @@ namespace AOC2022_P3
             // Return 0 if it's not a letter (or could throw an exception)
             return 0;
         }
+
+        // This method finds common letters between three strings
+        public static string FindCommonLetters(string first, string second, string third)
+        {
+            var common = first.Intersect(second).Intersect(third);
+            return new string(common.ToArray());
+        }
+
+
 
         // End of Functions
         static void Main(string[] args)
@@ -87,6 +96,7 @@ namespace AOC2022_P3
             // Read File:
             string filePath = @"C:\Users\buzz5\OneDrive\Desktop\AOC2022\p3.txt";
             int total = 0; // Initialize a variable to hold the running total
+            int index = 0; // Keep track of current line
 
             try
             {
@@ -94,10 +104,10 @@ namespace AOC2022_P3
                 List<string> lines = File.ReadAllLines(filePath).ToList();
 
                 // Process each line from the file
-                foreach (string line in lines)
+                /*foreach (string line in lines)
                 {
-                    // Check if the line has an even number of characters
-                    if (line.Length % 2 == 0)
+                    // Check if the line has an even number of characters Part 1:
+                    *//*if (line.Length % 2 == 0)
                     {
                         // Split the line into halves and calculate the total value of matches
                         var halves = SplitWordInHalf(line);
@@ -109,6 +119,23 @@ namespace AOC2022_P3
                     {
                         // Skip lines with an odd number of characters
                         Console.WriteLine($"Word: {line} - Skipped because it does not have an even number of letters.");
+                    }*//*
+                }*/
+
+                // Part 2:
+                for (index = 0; index < lines.Count; index += 3)
+                {
+                    // Ensure only three lines
+                    if (index + 2 < lines.Count)
+                    {
+                        string line1 = lines[index];
+                        string line2 = lines[index + 1];
+                        string line3 = lines[index + 2];
+
+                        // Find matching Letters
+                        string commonLetters = FindCommonLetters(line1, line2, line3);
+                        int sum = commonLetters.Sum(c => GetValueOfLetter(c));
+                        total += sum; // Add the value to the running total
                     }
                 }
             }
